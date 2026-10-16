@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Library System - Mohan Mittapally</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">PYTHON PROJECT</p>
+    <h1>Mini Library System</h1>
+    <p>A small project for organising books, tracking copies, and practising object-oriented programming.</p>
+    <p class="byline">Created by Mohan Mittapally</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What the Python project does</h2>
+      <p>The Mini Library System uses <b>Book</b> and <b>Library</b> classes to keep book information organised. It can add books, merge copies when a title already exists, lend and return books, and stop a book's available-copy count from going below zero.</p>
+      <p>The Python version practises JSON save/load, CSV export, reading text files, and exception handling. This webpage is a small browser demonstration; its sample data stays in the page and is not saved to the Python files.</p>
+    </section>
+
+    <section>
+      <h2>Try the browser demo</h2>
+      <div class="stats">
+        <div class="stat"><span id="titleCount">0</span><small>book titles</small></div>
+        <div class="stat"><span id="copyCount">0</span><small>available copies</small></div>
+      </div>
+      <div class="form">
+        <input id="titleInput" type="text" placeholder="Book title" aria-label="Book title">
+        <input id="authorInput" type="text" placeholder="Author" aria-label="Author">
+        <input id="copiesInput" type="number" min="1" value="1" aria-label="Number of copies">
+        <button id="addButton">Add book</button>
+      </div>
+      <p id="message" aria-live="polite"></p>
+      <h3>Books on the shelf</h3>
+      <div id="shelf"></div>
+    </section>
+
+    <section>
+      <h2>Python concepts practised</h2>
+      <ul>
+        <li><b>Classes and objects:</b> represent books and the library.</li>
+        <li><b>Encapsulation:</b> keep the copy count protected inside the Book object.</li>
+        <li><b>Conditions and loops:</b> find titles and check book availability.</li>
+        <li><b>File handling:</b> save or load JSON data and export CSV.</li>
+        <li><b>Exception handling:</b> deal with invalid input or file errors.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>Built with HTML, CSS and JavaScript. The original project is written in Python.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
